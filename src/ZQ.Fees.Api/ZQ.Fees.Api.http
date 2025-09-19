@@ -1,0 +1,6 @@
+@ZQ.Fees.Api_HostAddress = http://localhost:5125
+
+GET {{ZQ.Fees.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

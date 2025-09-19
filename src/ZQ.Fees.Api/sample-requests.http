@@ -1,0 +1,35 @@
+### Create Payment for Student 123
+POST https://localhost:7000/api/fees/123/payments
+Content-Type: application/json
+
+{
+  "amount": 100.50,
+  "method": 1
+}
+
+### Create Payment for Student 456 with Bank Transfer
+POST https://localhost:7000/api/fees/456/payments
+Content-Type: application/json
+
+{
+  "amount": 250.75,
+  "method": 3
+}
+
+### Create Payment with Invalid Amount (should fail validation)
+POST https://localhost:7000/api/fees/789/payments
+Content-Type: application/json
+
+{
+  "amount": 0,
+  "method": 1
+}
+
+### Create Payment with Invalid Method (should fail validation)
+POST https://localhost:7000/api/fees/789/payments
+Content-Type: application/json
+
+{
+  "amount": 100.00,
+  "method": 999
+}
