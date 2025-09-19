@@ -16,6 +16,8 @@ public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
             {
                 // All customise or standard exception types should be added here to handle.
                 // or else they will be treated as unhandled exception.
+                // We still need try catch in our code for particular scenarios. e.g. when some domain specific exception need to be thrown, so that we can handle it here
+                // Or, when we want to manage resource, in finally block want to do certian action, or action something specific in catch block.
                 { typeof(InvalidOperationException), HandleInvalidOperationException },
                 { typeof(ValidationException), HandleValidationException }
             };
