@@ -74,7 +74,7 @@ ZQ.Fees/
 - **MediatR** - Mediator pattern implementation
 - **FluentValidation** - Input validation library
 - **Swagger/OpenAPI** - API documentation
-- **xUnit** - Testing framework
+- **NUnit** - Testing framework
 - **MongoDB** - Database (orchestrated via Aspire in Docker)
 
 ## ✨ Features
@@ -403,24 +403,10 @@ dotnet ./publish/ZQ.Fees.Api.dll
 - **Async/Await**: All operations are asynchronous for better scalability
 - **Dependency Injection**: Proper service lifetime management
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For support and questions:
-- Create an issue in the repository
-- Contact the development team
-- Check the troubleshooting section above
 
 ---
 
